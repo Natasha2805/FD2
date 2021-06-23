@@ -23,8 +23,7 @@ console.log(findWord());
 
 function countLetter(){
     let str = prompt('введите строку');
-    let count = 0;
-    let arrayStr = Array.from(str).filter(i => 'аоиеёэыуюя'.includes(i)).length;
+    let arrayStr = Array.from(str).filter(i => 'аоиеёэыуюяАОИЕЁЭЫУЮЯ'.includes(i)).length;
     return arrayStr;
 }
 console.log(countLetter());
